@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 5rem;
+    background-color: #23252C;
+}
+
+@layer components {
+    button {
+        @apply w-[115px] h-[34px] font-semibold rounded-md;
+    }
+    .social--icons {
+        @apply w-[30px] h-[30px] bg-[#918E9B] rounded mr-6;
+        padding: 4px;
+    }
+}
